@@ -33,7 +33,7 @@ require("../configure");
 
 paypal.shipping.tracker.get("8MC585209K746392H-443844607820", function (error, sale) {
   if (error) {
-    console.log(JSON.stringify(error.errors));
+    console.log(error)
   } else {
     console.log("Get traker Response");
     console.log(JSON.stringify(sale));
