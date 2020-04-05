@@ -31,11 +31,11 @@ require("../configure");
 //   }
 // );
 
-paypal.shipping.tracker.get("123456789-XYZ123456", function (error, sale) {
+paypal.shipping.tracker.get("8MC585209K746392H-443844607820", function (error, sale) {
   if (error) {
-    throw error;
+    console.log(JSON.stringify(error.errors));
   } else {
-    console.log("Add traker Response");
+    console.log("Get traker Response");
     console.log(JSON.stringify(sale));
   }
 });
